@@ -1,0 +1,50 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-left: 20px;
+  background-image: url('img/log.jpg');
+  /* Ruta de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+}
+
+.form-field {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.required {
+  color: red;
+}
+
+.date-of-birth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mat-form-field {
+  margin-left: 20px;
+}
+
+
+.form-field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+
+.button {
+  margin-left: 85¿90;
+  margin-left: 880px;
+
+}

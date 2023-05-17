@@ -1,0 +1,57 @@
+<div class="form-container">
+  <h1>Registrar usuario</h1>
+  <form>
+    <mat-form-field class="form-field">
+      <mat-label>Nombre(s)</mat-label>
+      <input matInput placeholder="Nombre(s)" required>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <mat-label>Primer apellido</mat-label>
+      <input matInput placeholder="Primer apellido" required>
+    </mat-form-field>
+
+    <mat-form-field class="form-field">
+      <mat-label>Segundo apellido</mat-label>
+      <input matInput placeholder="Segundo apellido">
+    </mat-form-field>
+
+    <div class="input-container">
+      <div class="date-of-birth">
+        <mat-form-field>
+          <mat-label>Fecha de nacimiento</mat-label>
+          <input matInput [matDatepicker]="picker">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+      <mat-form-field class="form-field">
+        <mat-label>Sexo</mat-label>
+        <mat-select required>
+          <mat-option value="masculino">Masculino</mat-option>
+          <mat-option value="femenino">Femenino</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+      <mat-form-field class="form-field">
+        <mat-label>Estado</mat-label>
+        <mat-select required>
+          <mat-option value="opcion1">Opción 1</mat-option>
+          <mat-option value="opcion2">Opción 2</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    </div>
+
+    <br>
+    <mat-form-field class="form-field">
+      <mat-label>Correo electrónico</mat-label>
+      <input matInput type="email" placeholder="Correo electrónico">
+    </mat-form-field>
+
+    <button class="button" mat-raised-button color="primary" type="submit">Registrar</button>
+  </form>
+</div>
